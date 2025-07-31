@@ -1,12 +1,11 @@
 <template>
   <div class="min-h-screen bg-gray-50 flex items-center justify-center">
     <div class="text-center">
-      <div class="text-6xl mb-4">🤖</div>
       <h1 class="text-4xl font-bold text-gray-800 mb-4">
         404 - Page Not Found
       </h1>
       <p class="text-gray-600 mb-8">
-        The page you're looking for doesn't exist or has been moved.
+        Aww, this page does not exists
       </p>
       <router-link
         to="/"
