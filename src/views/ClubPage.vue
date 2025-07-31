@@ -18,7 +18,7 @@
             Back to Search
           </router-link>
           <a
-            href="https://github.com/yourusername/yourrepo"
+            href="https://github.com/leecheeyong/BrawlBio"
             target="_blank"
             rel="noopener"
             class="px-3 py-2 bg-white border border-gray-300 rounded-lg font-semibold text-[#22223b] hover:bg-gray-100 flex items-center gap-2 transition-colors duration-200"

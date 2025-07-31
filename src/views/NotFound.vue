@@ -10,7 +10,7 @@
       </p>
       <router-link
         to="/"
-        class="inline-block px-6 py-3 bg-[#6C63FF] rounded-lg hover:bg-[#4B48C6] transition-colors duration-200"
+        class="inline-block px-6 py-3 bg-[#6C63FF] rounded-lg hover:bg-[#4B48C6] text-white transition-colors duration-200"
       >
         Back to Home
       </router-link>
