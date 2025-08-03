@@ -10,8 +10,7 @@
       </h1>
       <div class="bg-white rounded-xl p-6 border border-gray-200 mb-8">
         <p class="text-lg text-gray-600 mb-8">
-          Track your Brawl Stars progress and stats with a clean, modern
-          interface.
+          Track your Brawl Stars progress and stats
         </p>
         <form @submit.prevent="searchPlayer" class="space-y-4">
           <input
@@ -64,7 +63,7 @@
               <span class="text-[#6C63FF] text-3xl mb-2">📊</span>
               <div class="font-semibold text-gray-800">Player Stats</div>
               <div class="text-xs text-gray-500 text-center">
-                View detailed player statistics and brawler progress
+                Detailed player statistics and brawler progress
               </div>
             </div>
             <div class="flex flex-col items-center">
