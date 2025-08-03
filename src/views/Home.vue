@@ -15,7 +15,7 @@
         <p class="text-sm text-gray-500 mb-4">
           Check out an
           <router-link
-            to="/player/82PGQVJ2L"
+            to="/player/8LJGC9VV9"
             class="text-[#6C63FF] hover:underline"
             >example player</router-link
           >
