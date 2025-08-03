@@ -9,8 +9,17 @@
         BrawlBio
       </h1>
       <div class="bg-white rounded-xl p-6 border border-gray-200 mb-8">
-        <p class="text-lg text-gray-600 mb-8">
+        <p class="text-lg text-gray-600 mb-2">
           Track your Brawl Stars progress and stats
+        </p>
+        <p class="text-sm text-gray-500 mb-4">
+          Check out an
+          <router-link
+            to="/player/82PGQVJ2L"
+            class="text-[#6C63FF] hover:underline"
+            >example player</router-link
+          >
+          to see how it works
         </p>
         <form @submit.prevent="searchPlayer" class="space-y-4">
           <input
