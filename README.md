@@ -5,7 +5,7 @@
 A place where Brawl Stars players can spice up their profile and track progresses and stats.
 
 ## About
-This project was inspired by a Discord Bot I made long time ago called [Jet Brawley](https://brawley.js.org), which is also a Brawl Stars statistics bot.
+This project was inspired by a Discord Bot I made long time ago called [Jet Brawley](https://brawley.js.org), which is a Brawl Stars statistics bot.
 
 ## Features
 - Track a player's statistics, brawlers & battle logs
