@@ -34,7 +34,7 @@
           <button
             type="submit"
             :disabled="loading || !playerTag.trim()"
-            class="w-full py-3 rounded-lg font-bold text-white bg-[#6C63FF] hover:bg-[#4B48C6] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+            class="w-full py-3 rounded-lg font-bold text-white bg-[#6C63FF]/70 hover:bg-[#4B48C6]/80 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <span
               v-if="loading"
