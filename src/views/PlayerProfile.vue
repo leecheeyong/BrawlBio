@@ -21,8 +21,9 @@
       >
         <router-link
           to="/"
-          class="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-[#6C63FF] via-[#FF6584] to-[#A084E8] bg-clip-text text-transparent drop-shadow select-none mb-2 sm:mb-0"
+          class="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-[#6C63FF] via-[#FF6584] to-[#A084E8] bg-clip-text text-transparent drop-shadow select-none mb-2 sm:mb-0 flex items-center gap-2"
         >
+          <img src="/logo.png" alt="Logo" class="w-10 h-10 filter invert" />
           BrawlBio
         </router-link>
         <div class="flex items-center gap-2 ml-auto">
@@ -30,7 +31,7 @@
             to="/"
             class="px-4 py-2 bg-[#6C63FF] text-white rounded-lg font-bold hover:bg-[#4B48C6] transition-colors duration-200"
           >
-            Search Another Player
+            Search For Player
           </router-link>
           <a
             href="https://github.com/leecheeyong/BrawlBio"
@@ -92,7 +93,7 @@
               <img
                 :src="getPlayerIconUrl(player.icon?.id || 28000000)"
                 :alt="player.name"
-                class="w-20 h-20 rounded-full shadow-lg border-4 border-primary-200"
+                class="w-20 h-20 rounded-lg shadow-md border-1 border-primary-200"
                 @error="handleImageError"
               />
               <div class="mt-4 sm:mt-0 text-center sm:text-left">
@@ -149,13 +150,14 @@
               <span>{{ player.expPoints }} XP</span>
             </div>
           </div>
-          <!-- Club Info -->
           <div
-            v-if="player.club"
             class="bg-white/70 backdrop-blur-lg rounded-2xl shadow-xl border border-white/30 p-6"
           >
             <h3 class="text-lg font-bold text-gray-900 mb-4">Club</h3>
-            <div class="flex flex-col sm:flex-row items-center justify-between">
+            <div
+              v-if="player.club && player.club.tag"
+              class="flex flex-col sm:flex-row items-center justify-between"
+            >
               <div class="text-center sm:text-left">
                 <router-link
                   :to="{
@@ -177,6 +179,9 @@
                 </p>
                 <p class="text-sm text-gray-500">Club Trophies</p>
               </div>
+            </div>
+            <div v-else class="text-center text-gray-500 py-4">
+              Not in a club
             </div>
           </div>
           <div
@@ -269,7 +274,7 @@
                         getBrawlerImageUrl(getPlayerBrawler(battle).brawler.id)
                       "
                       :alt="getPlayerBrawler(battle).brawler.name"
-                      class="w-8 h-8 rounded shadow"
+                      class="w-8 h-8"
                       @error="hideBrawlerImage"
                     />
                     <span class="text-sm font-bold text-gray-900">

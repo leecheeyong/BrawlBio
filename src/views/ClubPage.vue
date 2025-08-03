@@ -6,8 +6,9 @@
       >
         <router-link
           to="/"
-          class="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-[#6C63FF] via-[#FF6584] to-[#A084E8] bg-clip-text text-transparent drop-shadow select-none mb-2 sm:mb-0"
+          class="text-3xl font-extrabold tracking-wide bg-gradient-to-r from-[#6C63FF] via-[#FF6584] to-[#A084E8] bg-clip-text text-transparent drop-shadow select-none mb-2 sm:mb-0 flex items-center gap-2"
         >
+          <img src="/logo.png" alt="Logo" class="w-10 h-10 filter invert" />
           BrawlBio
         </router-link>
         <div class="flex items-center gap-2">
@@ -117,7 +118,7 @@
                 <img
                   :src="getPlayerIconUrl(member.icon?.id || 28000000)"
                   :alt="member.name"
-                  class="w-10 h-10 rounded-full"
+                  class="w-10 h-10 rounded-lg"
                   @error="handleImageError"
                 />
                 <div>
