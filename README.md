@@ -22,6 +22,8 @@ This project was inspired by a Discord Bot I made long time ago called [Jet Braw
 - [Royale API](https://royaleapi.com/) for their proxy endpoints, so that the API works on any IP address
 - [Brawlify CDN](https://brawlify.com/) for their player, club & brawler icon
 
+> This project is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it. For more information see [Supercell's Fan Content Policy](https://supercell.com/en/fan-content-policy/).
+
 ## License
 
 BrawlBio is available as an open source under the terms of this [MIT LICENSE](/LICENSE)
